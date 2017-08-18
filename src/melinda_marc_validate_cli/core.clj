@@ -32,8 +32,8 @@
   (->> id
        get-record
        first
-       (update-subfield {:code "a" :data "uskonpuhdistusaika"}
-                        {:code "a" :data "reformaation aika"})
+       (update-subfield {:code "a" :data "uskonpuhdistus"}
+                        {:code "a" :data "reformaatio"})
        (put-to-db id)))
 
 (defn -main
